@@ -19,7 +19,7 @@ subtitle: "To cultivate student innovation"
 url: "https://minnovateumn.github.io/" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
 baseurl: ""
-cover: "/img/mpls.jpg"
+cover: "/img/minnovate.png"
 logo: "/img/minnovate.png"
 
 # Build settings
