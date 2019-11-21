@@ -5,13 +5,13 @@ permalink: /join/
 ---
 
 <!-- Slider Start -->
-<section id="global-header">
+<section id="slider-join">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>Drop Us A Note</h1>
-          <p>Don’t just take our word for it. Check out some of our latest work.</p>
+          <h1>Join our Mission</h1>
+          <p>We'll take your career to the next level.</p>
         </div>
       </div>
     </div>
@@ -23,27 +23,41 @@ permalink: /join/
     <div class="row">
       <div class="col-md-6 col-sm-12">
         <div class="block">
-          <form action="contact-form-handler.php" method="post">
+          <form name="submit-to-google-sheet">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your Name">
+              <input name="firstName" type="text" class="form-control" placeholder="First Name">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Email Address">
+              <input name="lastName" type="text" class="form-control" placeholder="Last Name">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Major">
+              <input name="email" type="text" class="form-control" placeholder="UMN Email">
             </div>
           </form>
         </div>
       </div>
       <div class="col-md-6 col-sm-12">
         <div class="block">
-          <form action="contact-form-handler.php" method="post">
-            <div class="form-group-2">
-              <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+          <form name="submit-to-google-sheet">
+            <div class="form-group">
+              <input name="major" type="text" class="form-control" placeholder="Major">
+            </div>
+            <div class="form-group">
+              <input name="year" type="text" class="form-control" placeholder="School Year">
             </div>
             <button class="btn btn-default" type="submit">Send Message</button>
           </form>
+          <script>
+            const scriptURL = '<SCRIPT URL>'
+            const form = document.forms['submit-to-google-sheet']
+
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(https://script.google.com/macros/s/AKfycbwGQuJPszpBWsq9Z5-NKKjZcd9DJ8iPkSy8aiA3jNO3Y1B8OpGU/exec, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
         </div>
       </div>
     </div>
