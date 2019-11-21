@@ -48,12 +48,12 @@ permalink: /join/
             <button class="btn btn-default" type="submit">Send Message</button>
           </form>
           <script>
-            const scriptURL = '<SCRIPT URL>'
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwGQuJPszpBWsq9Z5-NKKjZcd9DJ8iPkSy8aiA3jNO3Y1B8OpGU/exec'
             const form = document.forms['submit-to-google-sheet']
 
             form.addEventListener('submit', e => {
               e.preventDefault()
-              fetch(https://script.google.com/macros/s/AKfycbwGQuJPszpBWsq9Z5-NKKjZcd9DJ8iPkSy8aiA3jNO3Y1B8OpGU/exec, { method: 'POST', body: new FormData(form)})
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => console.log('Success!', response))
                 .catch(error => console.error('Error!', error.message))
             })
