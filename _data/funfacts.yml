@@ -1,12 +1,12 @@
-- counter: 20000
-  icon: ion-ios-chatboxes-outline
+- counter: 1000
+  icon: ion-coffee
   text: Cups of Coffee
-- counter: 1500
-  icon: ion-ios-glasses-outline
-  text: Gallons of Soft Drink
-- counter: 1200
-  icon: ion-ios-compose-outline
+- counter: 50
+  icon: ion-settings
+  text: Prototypes Created
+- counter: 100
+  icon: ion-compose
   text: Whiteboard Markers
-- counter: 300
-  icon: ion-ios-timer-outline
-  text: Websites built
+- counter: 100
+  icon: ion-printer
+  text: 3D Printed Objects
