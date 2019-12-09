@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 3D Test Printing Project
-author: Tyler Rouze
+author: Minnovate Officer
 date: 11/20/19
 permalink: /work/testproj/
 ---
